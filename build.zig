@@ -255,14 +255,16 @@ pub fn buildLibSokol(b: *Build, options: LibSokolOptions) !*Build.Step.Compile {
     // finally add the C source files
     const csrc_root = "src/sokol/c/";
     const csources = [_][]const u8{
-        "sokol_log.c",
-        "sokol_app.c",
-        "sokol_gfx.c",
-        "sokol_time.c",
-        "sokol_audio.c",
-        "sokol_gl.c",
-        "sokol_debugtext.c",
-        "sokol_shape.c",
+        "sokol.c",
+        // "sokol_log.c",
+        // "sokol_app.c",
+        // "sokol_gfx.c",
+        // "sokol_time.c",
+        // "sokol_audio.c",
+        // "sokol_gl.c",
+        // "sokol_debugtext.c",
+        // "sokol_shape.c",
+        // "sokol_gp.c",
     };
     inline for (csources) |csrc| {
         lib.addCSourceFile(.{

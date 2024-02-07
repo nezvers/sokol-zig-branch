@@ -1,0 +1,17 @@
+#include "sokol_defines.h"
+#define SOKOL_APP_IMPL
+#define SOKOL_GFX_IMPL
+#define SOKOL_DEBUGTEXT_IMPL
+#define SOKOL_SHAPE_IMPL
+#define SOKOL_AUDIO_IMPL
+#define SOKOL_TIME_IMPL
+#define SOKOL_LOG_IMPL
+#define SOKOL_GP_IMPL
+#include "sokol_app.h"
+#include "sokol_gfx.h"
+#include "sokol_debugtext.h"
+#include "sokol_shape.h"
+#include "sokol_audio.h"
+#include "sokol_time.h"
+#include "sokol_log.h"
+#include "sokol_gp.h"
